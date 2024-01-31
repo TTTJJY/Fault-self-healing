@@ -1,0 +1,2369 @@
+Model {
+  Name			  "CSTHMaster"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sat Oct 02 10:28:33 1999"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "nina"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sat Dec 23 12:04:55 2006"
+  ModelVersionFormat	  "1.%<AutoIncrement:102>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "WorkspaceI/O"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode45"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "1000"
+  MaxOrder		  5
+  MaxStep		  "1"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  RelTol		  "1e-3"
+  AbsTol		  "1e-6"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  off
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  off
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      ShowAdditionalParam     off
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Derivative
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Fcn
+      Expr		      "sin(u[1])"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ShowAdditionalParam     off
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Lookup
+      InputValues	      "[-4:5]"
+      OutputValues	      " rand(1,10)-0.5"
+      ShowAdditionalParam     off
+      LookUpMeth	      "Interpolation-Extrapolation"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimit	      "0.5"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      TransferFcn
+      Numerator		      "[1]"
+      Denominator	      "[1 2 1]"
+      AbsoluteTolerance	      "auto"
+      Realization	      "auto"
+    }
+    Block {
+      BlockType		      TransportDelay
+      DelayTime		      "1"
+      InitialInput	      "0"
+      BufferSize	      "1024"
+      PadeOrder		      "0"
+      TransDelayFeedthrough   off
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "CSTHMaster"
+    Location		    [22, 112, 1009, 688]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Display
+      Name		      "CW PID OP/mA"
+      Ports		      [1]
+      Position		      [390, 400, 480, 430]
+      Format		      "short_e"
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "CW flow/(cu.m/sec)"
+      Ports		      [1]
+      Position		      [715, 445, 805, 475]
+      Format		      "short_e"
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "CWtemp/(deg C)"
+      Position		      [395, 200, 425, 230]
+      Value		      "24"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "HW valve/mA"
+      Position		      [40, 243, 70, 267]
+      Value		      "0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "HWtemp/(deg C)"
+      Position		      [395, 280, 425, 310]
+      Value		      "50"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Model Info"
+      Ports		      []
+      Position		      [25, 474, 266, 513]
+      ShowName		      off
+      FontName		      "Arial"
+      SourceBlock	      "simulink/Model-Wide\nUtilities/Model Info"
+      SourceType	      "CMBlock"
+      InitialBlockCM	      "none"
+      BlockCM		      "none"
+      Frame		      "off"
+      DisplayStringWithTags   "Nina Thornhill, University College London\nSept"
+"ember 1999, Revised November 2006"
+      MaskDisplayString	      "Nina Thornhill, University College London\\nSep"
+"tember 1999, Revised November 2006"
+      HorizontalTextAlignment "Left"
+      LeftAlignmentValue      "0.02"
+      SourceBlockDiagram      "CSTHMaster"
+      TagMaxNumber	      "20"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Model Info1"
+      Ports		      []
+      Position		      [20, 289, 127, 428]
+      ForegroundColor	      "gray"
+      ShowName		      off
+      FontName		      "Arial"
+      SourceBlock	      "simulink/Model-Wide\nUtilities/Model Info"
+      SourceType	      "CMBlock"
+      InitialBlockCM	      "none"
+      BlockCM		      "none"
+      Frame		      "off"
+      DisplayStringWithTags   "Standard operating\ncondition 1 is\nLevel sp = "
+"12 mA\nTemp sp = 10.5 mA\nHW valve = 0 mA\n\nStandard operating\ncondition 2 "
+"is\nLevel sp = 12 mA\nTemp sp = 10.5 mA\nHW valve = 5.5 mA"
+      MaskDisplayString	      "Standard operating\\ncondition 1 is\\nLevel sp "
+"= 12 mA\\nTemp sp = 10.5 mA\\nHW valve = 0 mA\\n\\nStandard operating\\ncondi"
+"tion 2 is\\nLevel sp = 12 mA\\nTemp sp = 10.5 mA\\nHW valve = 5.5 mA"
+      HorizontalTextAlignment "Left"
+      LeftAlignmentValue      "0.02"
+      SourceBlockDiagram      "CSTHMaster"
+      TagMaxNumber	      "20"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux1"
+      Ports		      [3, 1]
+      Position		      [800, 106, 805, 144]
+      ShowName		      off
+      Inputs		      "3"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux2"
+      Ports		      [3, 1]
+      Position		      [800, 246, 805, 284]
+      ShowName		      off
+      Inputs		      "3"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux3"
+      Ports		      [4, 1]
+      Position		      [800, 181, 805, 219]
+      ShowName		      off
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Pilot Plant Model"
+      Ports		      [5, 6]
+      Position		      [470, 108, 620, 317]
+      BackgroundColor	      "lightBlue"
+      TreatAsAtomicUnit	      off
+      System {
+	Name			"Pilot Plant Model"
+	Location		[122, 105, 972, 619]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "CW valve/mA"
+	  Position		  [40, 98, 70, 112]
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Steam valve/mA"
+	  Position		  [45, 243, 75, 257]
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "CWtemp/degC"
+	  Position		  [40, 303, 70, 317]
+	  Port			  "3"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HW valve/mA"
+	  Position		  [40, 393, 70, 407]
+	  Port			  "4"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HWtemp/degC"
+	  Position		  [40, 458, 70, 472]
+	  Port			  "5"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "CW valve"
+	  Ports			  [1, 2]
+	  Position		  [90, 76, 190, 129]
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "CW valve"
+	    Location		    [112, 137, 530, 307]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "CWValve/mA"
+	      Position		      [25, 33, 55, 47]
+	    }
+	    Block {
+	      BlockType		      Lookup
+	      Name		      "CWValve/mA\n2flow/(cu.m/sec)"
+	      Position		      [235, 25, 265, 55]
+	      InputValues	      "[ 0  4  5     6     8    10    12    14"
+"    16    18    20   24]"
+	      OutputValues	      "[ 0  0  1.9000e-005  2.8000e-005  4.000"
+"0e-005  5.6000e-005  7.7000e-005  1.0500e-004 1.3800e-004  1.7500e-004  2.080"
+"0e-004   2.0800e-004]"
+	    }
+	    Block {
+	      BlockType		      Lookup
+	      Name		      "CWValve/mA\n2flow//mA"
+	      Position		      [235, 95, 265, 125]
+	      InputValues	      "[0     3     4     5     6     7     8 "
+"    9    10    11    13    15  18    21    24]"
+	      OutputValues	      "[ 4.3400    4.3350    4.3350    5.7100 "
+"   6.3200    6.9250    7.5000 8.0750    8.8700    9.7800   11.9400   14.6800 "
+"  19.5300   24.2000  24.2000]"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Valve dynamics"
+	      Ports		      [1, 1]
+	      Position		      [100, 28, 155, 52]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Valve dynamics"
+		Location		[81, 385, 473, 507]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [25, 38, 55, 52]
+		}
+		Block {
+		  BlockType		  TransferFcn
+		  Name			  "Transfer Fcn"
+		  Position		  [210, 27, 270, 63]
+		  Numerator		  "1"
+		  Denominator		  "[3.8 1]"
+		}
+		Block {
+		  BlockType		  TransportDelay
+		  Name			  "Valve Delay\n(1 sec)"
+		  Position		  [150, 30, 180, 60]
+		}
+		Block {
+		  BlockType		  Saturate
+		  Name			  "limit to\n0 to 25 mA1"
+		  Position		  [85, 29, 115, 61]
+		  UpperLimit		  "25"
+		  LowerLimit		  "0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  Position		  [315, 38, 345, 52]
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "limit to\n0 to 25 mA1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "limit to\n0 to 25 mA1"
+		  SrcPort		  1
+		  DstBlock		  "Valve Delay\n(1 sec)"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Transfer Fcn"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Valve Delay\n(1 sec)"
+		  SrcPort		  1
+		  DstBlock		  "Transfer Fcn"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "flow/\ncu.m/sec"
+	      Position		      [330, 33, 360, 47]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "flow.mA"
+	      Position		      [330, 103, 360, 117]
+	      Port		      "2"
+	    }
+	    Line {
+	      SrcBlock		      "Valve dynamics"
+	      SrcPort		      1
+	      Points		      [35, 0]
+	      Branch {
+		Points			[0, 70]
+		DstBlock		"CWValve/mA\n2flow//mA"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"CWValve/mA\n2flow/(cu.m/sec)"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "CWValve/mA"
+	      SrcPort		      1
+	      DstBlock		      "Valve dynamics"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "CWValve/mA\n2flow/(cu.m/sec)"
+	      SrcPort		      1
+	      DstBlock		      "flow/\ncu.m/sec"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "CWValve/mA\n2flow//mA"
+	      SrcPort		      1
+	      DstBlock		      "flow.mA"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "HW valve"
+	  Ports			  [1, 1]
+	  Position		  [105, 385, 215, 415]
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "HW valve"
+	    Location		    [355, 220, 849, 532]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "\n"
+	      Position		      [25, 33, 55, 47]
+	    }
+	    Block {
+	      BlockType		      Lookup
+	      Name		      "HWValve/mA\n2flow/(cu.m/sec)"
+	      Position		      [200, 25, 230, 55]
+	      InputValues	      "[ 0    4    5     6     7      8    9  "
+"    10    12 ]"
+	      OutputValues	      "[ 0   0  3.07e-005  7.36e-005  11.29e-0"
+"05  14.88e-005   17.87e-005   20.56e-005  23.91e-005]  "
+	    }
+	    Block {
+	      BlockType		      Saturate
+	      Name		      "limit to\n0 to 25 mA"
+	      Position		      [95, 25, 125, 55]
+	      UpperLimit	      "25"
+	      LowerLimit	      "0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "HWflow /\n (cu.m/sec)\n"
+	      Position		      [295, 33, 325, 47]
+	    }
+	    Line {
+	      SrcBlock		      "HWValve/mA\n2flow/(cu.m/sec)"
+	      SrcPort		      1
+	      DstBlock		      "HWflow /\n (cu.m/sec)\n"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "\n"
+	      SrcPort		      1
+	      DstBlock		      "limit to\n0 to 25 mA"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "limit to\n0 to 25 mA"
+	      SrcPort		      1
+	      DstBlock		      "HWValve/mA\n2flow/(cu.m/sec)"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Heat balance"
+	  Ports			  [7, 2]
+	  Position		  [345, 230, 535, 390]
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "Heat balance"
+	    Location		    [130, 103, 1007, 717]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Steam\nvalve/mA"
+	      Position		      [30, 38, 60, 52]
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "volume/cu.m"
+	      Position		      [80, 103, 110, 117]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "CWINflow/\n(cu.m/sec)"
+	      Position		      [30, 163, 60, 177]
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "CWtemp/\n(degC)"
+	      Position		      [80, 198, 110, 212]
+	      Port		      "4"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "OUT and OVER\nflow/(cu.m/sec)"
+	      Position		      [30, 263, 60, 277]
+	      Port		      "5"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HWINflow/\n(cu.m/sec)"
+	      Position		      [30, 378, 60, 392]
+	      Port		      "6"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HWtemp/\n(degC)"
+	      Position		      [80, 413, 110, 427]
+	      Port		      "7"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "CWINenth/sec"
+	      Ports		      [2, 1]
+	      Position		      [135, 153, 180, 222]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"CWINenth/sec"
+		Location		[63, 277, 598, 577]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "INflow"
+		  Position		  [30, 18, 60, 32]
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "IN_T"
+		  Position		  [25, 78, 55, 92]
+		  Port			  "2"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Cold water IN"
+		  Ports			  [1, 2]
+		  Position		  [80, 56, 125, 114]
+		  TreatAsAtomicUnit	  off
+		  System {
+		    Name		    "Cold water IN"
+		    Location		    [305, 250, 500, 382]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "usletter"
+		    PaperUnits		    "inches"
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IN-T"
+		    Position		    [25, 83, 55, 97]
+		    }
+		    Block {
+		    BlockType		    Lookup
+		    Name		    "T2h1"
+		    Position		    [85, 75, 115, 105]
+		    InputValues		    "[ 6;  8; 10; 12; 15 ;20; 25; 30; "
+"34; 38 ; 42; 46; 50; 55; 60; 65; 70; 75; 80; 85; 90; 95; 100]"
+		    OutputValues	    "[25.5; 33.6; 42.0;  50.4; 62.9 ; "
+"83.9; 104.8; 125.7; 142.4; 159.1; 175.8; 192.5; 209.3; 230.2;  251.1; 272; 29"
+"3; 313.9; 334.9; 355.9; 376.9; 398; 419.1]"
+		    }
+		    Block {
+		    BlockType		    Lookup
+		    Name		    "T2rho"
+		    Position		    [85, 25, 115, 55]
+		    InputValues		    "[0; 25; 50; 75; 100]"
+		    OutputValues	    "[1000; 997; 988; 975; 958]"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "IN_rho"
+		    Position		    [140, 33, 170, 47]
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "IN_h"
+		    Position		    [140, 83, 170, 97]
+		    Port		    "2"
+		    }
+		    Line {
+		    SrcBlock		    "IN-T"
+		    SrcPort		    1
+		    Points		    [0, 0]
+		    Branch {
+		    DstBlock		    "T2h1"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, -50]
+		    DstBlock		    "T2rho"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "T2rho"
+		    SrcPort		    1
+		    DstBlock		    "IN_rho"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "T2h1"
+		    SrcPort		    1
+		    DstBlock		    "IN_h"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Product
+		  Name			  "Product2"
+		  Ports			  [3, 1]
+		  Position		  [160, 26, 185, 114]
+		  Inputs		  "***"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "IN_H"
+		  Position		  [210, 63, 240, 77]
+		}
+		Line {
+		  SrcBlock		  "Cold water IN"
+		  SrcPort		  1
+		  DstBlock		  "Product2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Cold water IN"
+		  SrcPort		  2
+		  DstBlock		  "Product2"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Product2"
+		  SrcPort		  1
+		  DstBlock		  "IN_H"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "IN_T"
+		  SrcPort		  1
+		  DstBlock		  "Cold water IN"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "INflow"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, 15]
+		  DstBlock		  "Product2"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "HWINenth/sec"
+	      Ports		      [2, 1]
+	      Position		      [135, 368, 180, 437]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"HWINenth/sec"
+		Location		[65, 275, 355, 447]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "INflow"
+		  Position		  [30, 18, 60, 32]
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "IN_T"
+		  Position		  [25, 78, 55, 92]
+		  Port			  "2"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Hot  water IN"
+		  Ports			  [1, 2]
+		  Position		  [80, 56, 125, 114]
+		  TreatAsAtomicUnit	  off
+		  System {
+		    Name		    "Hot  water IN"
+		    Location		    [305, 232, 591, 469]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "usletter"
+		    PaperUnits		    "inches"
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IN-T"
+		    Position		    [25, 83, 55, 97]
+		    }
+		    Block {
+		    BlockType		    Lookup
+		    Name		    "T2h1"
+		    Position		    [85, 75, 115, 105]
+		    InputValues		    "[ 6;  8; 10; 12; 15 ;20; 25; 30; "
+"34; 38 ; 42; 46; 50; 55; 60; 65; 70; 75; 80; 85; 90; 95; 100]"
+		    OutputValues	    "[25.5; 33.6; 42.0;  50.4; 62.9 ; "
+"83.9; 104.8; 125.7; 142.4; 159.1; 175.8; 192.5; 209.3; 230.2;  251.1; 272; 29"
+"3; 313.9; 334.9; 355.9; 376.9; 398; 419.1]"
+		    }
+		    Block {
+		    BlockType		    Lookup
+		    Name		    "T2rho"
+		    Position		    [85, 25, 115, 55]
+		    InputValues		    "[0; 25; 50; 75; 100]"
+		    OutputValues	    "[1000; 997; 988; 975; 958]"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "IN_rho"
+		    Position		    [140, 33, 170, 47]
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "IN_h"
+		    Position		    [140, 83, 170, 97]
+		    Port		    "2"
+		    }
+		    Line {
+		    SrcBlock		    "T2h1"
+		    SrcPort		    1
+		    DstBlock		    "IN_h"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "T2rho"
+		    SrcPort		    1
+		    DstBlock		    "IN_rho"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "IN-T"
+		    SrcPort		    1
+		    Points		    [0, 0]
+		    Branch {
+		    Points		    [0, -50]
+		    DstBlock		    "T2rho"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "T2h1"
+		    DstPort		    1
+		    }
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Product
+		  Name			  "Product2"
+		  Ports			  [3, 1]
+		  Position		  [160, 26, 185, 114]
+		  Inputs		  "***"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "IN_H"
+		  Position		  [210, 63, 240, 77]
+		}
+		Line {
+		  SrcBlock		  "INflow"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, 15]
+		  DstBlock		  "Product2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "IN_T"
+		  SrcPort		  1
+		  DstBlock		  "Hot  water IN"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Product2"
+		  SrcPort		  1
+		  DstBlock		  "IN_H"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Hot  water IN"
+		  SrcPort		  2
+		  DstBlock		  "Product2"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Hot  water IN"
+		  SrcPort		  1
+		  DstBlock		  "Product2"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Integrator
+	      Name		      "OUT_H. Upper\nsaturation limit\nis for "
+"full tank at \n100 deg C"
+	      Ports		      [1, 1]
+	      Position		      [360, 185, 390, 215]
+	      InitialCondition	      "583.3"
+	      LimitOutput	      on
+	      UpperSaturationLimit    "3000"
+	      LowerSaturationLimit    "0"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "OUT_h"
+	      Ports		      [2, 1]
+	      Position		      [450, 177, 480, 208]
+	      Inputs		      "/*"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "OUTenth/sec"
+	      Ports		      [2, 1]
+	      Position		      [135, 253, 180, 322]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"OUTenth/sec"
+		Location		[347, 289, 882, 589]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "OUTflow"
+		  Position		  [25, 18, 55, 32]
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "OUT_T"
+		  Position		  [25, 78, 55, 92]
+		  Port			  "2"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Hot water OUT"
+		  Ports			  [1, 2]
+		  Position		  [80, 54, 125, 116]
+		  TreatAsAtomicUnit	  off
+		  System {
+		    Name		    "Hot water OUT"
+		    Location		    [305, 350, 505, 482]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "usletter"
+		    PaperUnits		    "inches"
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "OUT_T"
+		    Position		    [25, 83, 55, 97]
+		    }
+		    Block {
+		    BlockType		    Lookup
+		    Name		    "T2h"
+		    Position		    [90, 75, 120, 105]
+		    InputValues		    "[ 6;  8; 10; 12; 15 ;20; 25; 30; "
+"34; 38 ; 42; 46; 50; 55; 60; 65; 70; 75; 80; 85; 90; 95; 100]"
+		    OutputValues	    "[25.5; 33.6; 42.0;  50.4; 62.9 ; "
+"83.9; 104.8; 125.7; 142.4; 159.1; 175.8; 192.5; 209.3; 230.2;  251.1; 272; 29"
+"3; 313.9; 334.9; 355.9; 376.9; 398; 419.1]"
+		    }
+		    Block {
+		    BlockType		    Lookup
+		    Name		    "T2rho1"
+		    Position		    [90, 25, 120, 55]
+		    InputValues		    "[0; 25; 50; 75; 100]"
+		    OutputValues	    "[1000; 997; 988; 975; 958]"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "OUT_rho"
+		    Position		    [145, 33, 175, 47]
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "OUT_h"
+		    Position		    [145, 83, 175, 97]
+		    Port		    "2"
+		    }
+		    Line {
+		    SrcBlock		    "OUT_T"
+		    SrcPort		    1
+		    Points		    [5, 0]
+		    Branch {
+		    DstBlock		    "T2h"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, -50]
+		    DstBlock		    "T2rho1"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "T2rho1"
+		    SrcPort		    1
+		    DstBlock		    "OUT_rho"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "T2h"
+		    SrcPort		    1
+		    DstBlock		    "OUT_h"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Product
+		  Name			  "Product2"
+		  Ports			  [3, 1]
+		  Position		  [160, 26, 185, 114]
+		  Inputs		  "***"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "OUT_H"
+		  Position		  [210, 63, 240, 77]
+		}
+		Line {
+		  SrcBlock		  "OUTflow"
+		  SrcPort		  1
+		  Points		  [40, 0; 0, 15]
+		  DstBlock		  "Product2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "OUT_T"
+		  SrcPort		  1
+		  DstBlock		  "Hot water OUT"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Product2"
+		  SrcPort		  1
+		  DstBlock		  "OUT_H"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Hot water OUT"
+		  SrcPort		  2
+		  DstBlock		  "Product2"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Hot water OUT"
+		  SrcPort		  1
+		  DstBlock		  "Product2"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Lookup
+	      Name		      "SteavValve/mA 2\nSteam enth/sec"
+	      Position		      [160, 30, 190, 60]
+	      InputValues	      "[  0 ;   4.0000;    7.5000 ;   9.0000 ;"
+"  11.0000 ;  14.0000 ;  17.0000;  20.0000;  25.0000]"
+	      OutputValues	      "[0 ;   0 ;   2.24;   2.61 ;   4.65 ;   "
+"8.89 ;  13.60;  15.04;  15.04]"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum"
+	      Ports		      [4, 1]
+	      Position		      [310, 157, 330, 243]
+	      ShowName		      off
+	      Inputs		      "++-+"
+	    }
+	    Block {
+	      BlockType		      Lookup
+	      Name		      "T2rho"
+	      Position		      [575, 110, 605, 140]
+	      Orientation	      "left"
+	      InputValues	      "[0; 25; 50; 75; 100]"
+	      OutputValues	      "[1000; 997; 988; 975; 958]"
+	    }
+	    Block {
+	      BlockType		      TransportDelay
+	      Name		      "TI 1 delay"
+	      Position		      [565, 180, 595, 210]
+	      DelayTime		      "0.5"
+	    }
+	    Block {
+	      BlockType		      TransportDelay
+	      Name		      "TI 1 delay1"
+	      Position		      [645, 180, 675, 210]
+	      DelayTime		      "7.5"
+	    }
+	    Block {
+	      BlockType		      Lookup
+	      Name		      "Temp2mA"
+	      Position		      [720, 180, 750, 210]
+	      InputValues	      "[24.0000   30.0000   31.0000   36.5000 "
+"  44.5000   48.0000   61.0000  65.000]"
+	      OutputValues	      "[7.7850    8.6100    8.7600    9.5900  "
+" 10.8000   11.3800   13.52   14.2000]"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "VolXrho"
+	      Ports		      [2, 1]
+	      Position		      [420, 102, 450, 133]
+	      Orientation	      "left"
+	      Inputs		      "**"
+	    }
+	    Block {
+	      BlockType		      Lookup
+	      Name		      "h2T"
+	      Position		      [510, 180, 540, 210]
+	      InputValues	      "[25.5; 33.6; 42.0;  50.4; 62.9 ; 83.9; "
+"104.8; 125.7; 142.4; 159.1; 175.8; 192.5; 209.3; 230.2;  251.1; 272; 293; 313"
+".9; 334.9; 355.9; 376.9; 398; 419.1]"
+	      OutputValues	      "[ 6;  8; 10; 12; 15 ;20; 25; 30; 34; 38"
+" ; 42; 46; 50; 55; 60; 65; 70; 75; 80; 85; 90; 95; 100]"
+	    }
+	    Block {
+	      BlockType		      Saturate
+	      Name		      "limit to\n0 to 25 mA"
+	      Position		      [90, 30, 120, 60]
+	      UpperLimit	      "25"
+	      LowerLimit	      "0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Temp/mA"
+	      Position		      [780, 188, 810, 202]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Temp/(degC)"
+	      Position		      [780, 238, 810, 252]
+	      Port		      "2"
+	    }
+	    Line {
+	      SrcBlock		      "OUT_h"
+	      SrcPort		      1
+	      DstBlock		      "h2T"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      DstBlock		      "OUT_H. Upper\nsaturation limit\nis for "
+"full tank at \n100 deg C"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "SteavValve/mA 2\nSteam enth/sec"
+	      SrcPort		      1
+	      Points		      [80, 0; 0, 125]
+	      DstBlock		      "Sum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "OUTenth/sec"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, -80]
+	      DstBlock		      "Sum"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "CWINenth/sec"
+	      SrcPort		      1
+	      DstBlock		      "Sum"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "VolXrho"
+	      SrcPort		      1
+	      Points		      [-15, 0; 0, 65]
+	      DstBlock		      "OUT_h"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Steam\nvalve/mA"
+	      SrcPort		      1
+	      DstBlock		      "limit to\n0 to 25 mA"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "CWINflow/\n(cu.m/sec)"
+	      SrcPort		      1
+	      DstBlock		      "CWINenth/sec"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "CWtemp/\n(degC)"
+	      SrcPort		      1
+	      DstBlock		      "CWINenth/sec"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "OUT and OVER\nflow/(cu.m/sec)"
+	      SrcPort		      1
+	      DstBlock		      "OUTenth/sec"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "volume/cu.m"
+	      SrcPort		      1
+	      Points		      [105, 0; 0, -25; 245, 0]
+	      DstBlock		      "VolXrho"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "h2T"
+	      SrcPort		      1
+	      DstBlock		      "TI 1 delay"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "TI 1 delay"
+	      SrcPort		      1
+	      Points		      [20, 0]
+	      Branch {
+		DstBlock		"T2rho"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 150; -525, 0; 0, -40]
+		DstBlock		"OUTenth/sec"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"TI 1 delay1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "T2rho"
+	      SrcPort		      1
+	      DstBlock		      "VolXrho"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "OUT_H. Upper\nsaturation limit\nis for "
+"full tank at \n100 deg C"
+	      SrcPort		      1
+	      DstBlock		      "OUT_h"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Temp2mA"
+	      SrcPort		      1
+	      DstBlock		      "Temp/mA"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "TI 1 delay1"
+	      SrcPort		      1
+	      Points		      [15, 0]
+	      Branch {
+		DstBlock		"Temp2mA"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 50]
+		DstBlock		"Temp/(degC)"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "HWINflow/\n(cu.m/sec)"
+	      SrcPort		      1
+	      DstBlock		      "HWINenth/sec"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HWtemp/\n(degC)"
+	      SrcPort		      1
+	      DstBlock		      "HWINenth/sec"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "HWINenth/sec"
+	      SrcPort		      1
+	      Points		      [90, 0; 0, -175]
+	      DstBlock		      "Sum"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "limit to\n0 to 25 mA"
+	      SrcPort		      1
+	      DstBlock		      "SteavValve/mA 2\nSteam enth/sec"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Mass balance"
+	  Ports			  [1, 4]
+	  Position		  [365, 53, 520, 137]
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "Mass balance"
+	    Location		    [85, 120, 882, 490]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "INflow/\n(cu.m/sec)"
+	      Position		      [20, 33, 50, 47]
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "Boolean for full tank"
+	      Position		      [485, 235, 545, 265]
+	      Expr		      "u >= 0.0075"
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "Empirical calc\nfor OUTflow"
+	      Position		      [310, 165, 370, 195]
+	      Expr		      "1e-4 * (0.1013 * sqrt(55+u) + 0.0237)"
+	    }
+	    Block {
+	      BlockType		      Integrator
+	      Name		      "Integrator"
+	      Ports		      [1, 1]
+	      Position		      [190, 30, 220, 60]
+	      InitialCondition	      "0.003309"
+	      LimitOutput	      on
+	      UpperSaturationLimit    "7.5*1e-3"
+	      LowerSaturationLimit    "0"
+	    }
+	    Block {
+	      BlockType		      Lookup
+	      Name		      "Level/cm\n2mA"
+	      Position		      [635, 110, 665, 140]
+	      InputValues	      "[1.0000    1.6000    3.2000    4.8000  "
+"  6.5000    8.3000   10.0000   11.8000   13.5000   15.3000   16.9000   18.500"
+"0   24.9000   31.2000   32.8000   34.3000   35.9000   37.5000   39.1000   40."
+"7000   42.4000  44.0000   45.6000   47.3000]"
+	      OutputValues	      "[3.5590    3.8830    4.5510    5.2930  "
+"  6.0160    6.7700    7.5390  8.2850    9.0270    9.7970   10.4900   11.1700 "
+"  13.8600   16.5400  17.2100   17.8800   18.5400   19.2400   19.9600   20.630"
+"0   21.3600   22.0500   22.7500   23.4700]"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Overflow"
+	      Ports		      [2, 1]
+	      Position		      [575, 227, 590, 318]
+	      InputSameDT	      off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum"
+	      Ports		      [2, 1]
+	      Position		      [90, 35, 110, 55]
+	      ShowName		      off
+	      Inputs		      "+-"
+	      Port {
+		PortNumber		1
+		Name			"inflow - outflow"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum3"
+	      Ports		      [2, 1]
+	      Position		      [645, 170, 665, 190]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|++"
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Lookup
+	      Name		      "Vol/(cu.m)\n2level/cm"
+	      Position		      [255, 165, 285, 195]
+	      InputValues	      "1e-3*[0    0.2500    0.5000    0.7500  "
+"  1.0000    1.2500    1.5000  1.7500    2.0000    2.5000    2.7500    3.0000 "
+"   4.0000    5.0000  5.2500    5.5000    5.7500    6.0000    6.2500    6.5000"
+"    6.7500   7.0000    7.2500    7.5000]"
+	      OutputValues	      "[1.0000    1.6000    3.2000    4.8000  "
+"  6.5000    8.3000   10.0000   11.8000   13.5000   15.3000   16.9000   18.500"
+"0   24.9000   31.2000   32.8000   34.3000   35.9000   37.5000   39.1000   40."
+"7000   42.4000  44.0000   45.6000   47.3000]"
+	    }
+	    Block {
+	      BlockType		      Lookup
+	      Name		      "Vol/(cu.m)\n2level/cm1"
+	      Position		      [330, 65, 360, 95]
+	      InputValues	      "1e-3*[0    0.2500    0.5000    0.7500  "
+"  1.0000    1.2500    1.5000  1.7500    2.0000    2.5000    2.7500    3.0000 "
+"   4.0000    5.0000  5.2500    5.5000    5.7500    6.0000    6.2500    6.5000"
+"    6.7500   7.0000    7.2500    7.5000]"
+	      OutputValues	      "[1.0000    1.6000    3.2000    4.8000  "
+"  6.5000    8.3000   10.0000   11.8000   13.5000   15.3000   16.9000   18.500"
+"0   24.9000   31.2000   32.8000   34.3000   35.9000   37.5000   39.1000   40."
+"7000   42.4000  44.0000   45.6000   47.3000]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Volume/cu.m"
+	      Position		      [690, 38, 720, 52]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "level/mA"
+	      Position		      [690, 118, 720, 132]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "level/cm"
+	      Position		      [690, 73, 720, 87]
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "OUT and OVER\nflow/(cu.m/sec)"
+	      Position		      [690, 173, 720, 187]
+	      Port		      "4"
+	    }
+	    Line {
+	      Name		      "inflow - outflow"
+	      Labels		      [0, 1]
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      Points		      [25, 0; 5, 0]
+	      Branch {
+		DstBlock		"Integrator"
+		DstPort			1
+	      }
+	      Branch {
+		Labels			[-1, 0]
+		Points			[0, 250]
+		DstBlock		"Overflow"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "INflow/\n(cu.m/sec)"
+	      SrcPort		      1
+	      DstBlock		      "Sum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Integrator"
+	      SrcPort		      1
+	      Points		      [-20, 0; 30, 0]
+	      Branch {
+		Points			[0, 135]
+		DstBlock		"Vol/(cu.m)\n2level/cm"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[45, 0]
+		Branch {
+		  Points		  [0, 35]
+		  DstBlock		  "Vol/(cu.m)\n2level/cm1"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [180, 0]
+		  Branch {
+		    DstBlock		    "Volume/cu.m"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 205]
+		    DstBlock		    "Boolean for full tank"
+		    DstPort		    1
+		  }
+		}
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Vol/(cu.m)\n2level/cm"
+	      SrcPort		      1
+	      DstBlock		      "Empirical calc\nfor OUTflow"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Empirical calc\nfor OUTflow"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, 0]
+	      Branch {
+		Points			[0, 50; -325, 0; 0, -180]
+		DstBlock		"Sum"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[0, 0]
+		DstBlock		"Sum3"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Level/cm\n2mA"
+	      SrcPort		      1
+	      DstBlock		      "level/mA"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Vol/(cu.m)\n2level/cm1"
+	      SrcPort		      1
+	      Points		      [0, 0; 15, 0]
+	      Branch {
+		DstBlock		"level/cm"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 45]
+		DstBlock		"Level/cm\n2mA"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Boolean for full tank"
+	      SrcPort		      1
+	      DstBlock		      "Overflow"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sum3"
+	      SrcPort		      1
+	      DstBlock		      "OUT and OVER\nflow/(cu.m/sec)"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Overflow"
+	      SrcPort		      1
+	      Points		      [60, 0]
+	      DstBlock		      "Sum3"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [305, 85, 325, 105]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "level/mA"
+	  Position		  [740, 78, 770, 92]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "level/cm"
+	  Position		  [740, 133, 770, 147]
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "CWflow/mA"
+	  Position		  [740, 208, 770, 222]
+	  Port			  "3"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "CWflow/\n(cu.m/sec)"
+	  Position		  [740, 28, 770, 42]
+	  Port			  "4"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "temp/mA"
+	  Position		  [740, 263, 770, 277]
+	  Port			  "5"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "temp/degC"
+	  Position		  [740, 343, 770, 357]
+	  Port			  "6"
+	}
+	Line {
+	  SrcBlock		  "Mass balance"
+	  SrcPort		  1
+	  Points		  [50, 0; 0, 135; -285, 0; 0, 70]
+	  DstBlock		  "Heat balance"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "CW valve/mA"
+	  SrcPort		  1
+	  DstBlock		  "CW valve"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CW valve"
+	  SrcPort		  2
+	  Points		  [10, 0; 0, 100]
+	  DstBlock		  "CWflow/mA"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Steam valve/mA"
+	  SrcPort		  1
+	  DstBlock		  "Heat balance"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Heat balance"
+	  SrcPort		  1
+	  DstBlock		  "temp/mA"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CWtemp/degC"
+	  SrcPort		  1
+	  DstBlock		  "Heat balance"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Heat balance"
+	  SrcPort		  2
+	  DstBlock		  "temp/degC"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mass balance"
+	  SrcPort		  4
+	  Points		  [40, 0; 0, 55; -315, 0; 0, 150]
+	  DstBlock		  "Heat balance"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "Mass balance"
+	  SrcPort		  2
+	  DstBlock		  "level/mA"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mass balance"
+	  SrcPort		  3
+	  Points		  [65, 0; 0, 35]
+	  DstBlock		  "level/cm"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "HW valve/mA"
+	  SrcPort		  1
+	  DstBlock		  "HW valve"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CW valve"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  Branch {
+	    Points		    [0, -55]
+	    DstBlock		    "CWflow/\n(cu.m/sec)"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Sum"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 200]
+	    DstBlock		    "Heat balance"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Mass balance"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "HW valve"
+	  SrcPort		  1
+	  Points		  [55, 0; 0, -50]
+	  Branch {
+	    Points		    [0, -250]
+	    DstBlock		    "Sum"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "Heat balance"
+	    DstPort		    6
+	  }
+	}
+	Line {
+	  SrcBlock		  "HWtemp/degC"
+	  SrcPort		  1
+	  Points		  [215, 0; 0, -95]
+	  DstBlock		  "Heat balance"
+	  DstPort		  7
+	}
+      }
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      Ports		      [2, 1]
+      Position		      [175, 119, 195, 166]
+      ShowName		      off
+      Inputs		      "-+"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum1"
+      Ports		      [2, 1]
+      Position		      [175, 189, 195, 236]
+      ShowName		      off
+      Inputs		      "+-"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum2"
+      Ports		      [2, 1]
+      Position		      [280, 109, 300, 156]
+      ShowName		      off
+      Inputs		      "-+"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "flow PID"
+      Ports		      [1, 1]
+      Position		      [320, 120, 350, 150]
+      SourceBlock	      "simulink_extras/Additional\nLinear/PID Controll"
+"er"
+      SourceType	      "PID Controller"
+      P			      "0.5"
+      I			      "0.2"
+      D			      "0"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "flow/ mA"
+      Ports		      [1]
+      Position		      [820, 310, 910, 340]
+      Format		      "short_e"
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "flow/mA"
+      Ports		      [1]
+      Position		      [855, 184, 885, 216]
+      Location		      [692, 481, 1016, 720]
+      Open		      on
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      TimeRange		      "1000            "
+      YMin		      "2.5"
+      YMax		      "25"
+      SaveToWorkspace	      on
+      SaveName		      "flow"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "level PID"
+      Ports		      [1, 1]
+      Position		      [215, 130, 245, 160]
+      SourceBlock	      "simulink_extras/Additional\nLinear/PID Controll"
+"er"
+      SourceType	      "PID Controller"
+      P			      "2"
+      I			      "0.1"
+      D			      "0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "level sp/mA"
+      Position		      [40, 144, 70, 166]
+      Value		      "12"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "level/ mA"
+      Ports		      [1]
+      Position		      [820, 60, 910, 90]
+      Format		      "short_e"
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "level/cm"
+      Ports		      [1]
+      Position		      [715, 395, 805, 425]
+      Format		      "short_e"
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "level/mA"
+      Ports		      [1]
+      Position		      [855, 109, 885, 141]
+      Location		      [14, 481, 338, 720]
+      Open		      on
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      TimeRange		      "1000            "
+      YMin		      "2.5"
+      YMax		      "25"
+      SaveToWorkspace	      on
+      SaveName		      "level"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "temp PID"
+      Ports		      [1, 1]
+      Position		      [215, 200, 245, 230]
+      SourceBlock	      "simulink_extras/Additional\nLinear/PID Controll"
+"er"
+      SourceType	      "PID Controller"
+      P			      "3"
+      I			      "0.1"
+      D			      "0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "temp sp/mA"
+      Position		      [40, 188, 70, 212]
+      Value		      "10.5"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "temp/ PID OP/mA"
+      Ports		      [1]
+      Position		      [390, 455, 480, 485]
+      Format		      "short_e"
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "temp/ mA"
+      Ports		      [1]
+      Position		      [820, 360, 910, 390]
+      Format		      "short_e"
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "temp/degC"
+      Ports		      [1]
+      Position		      [715, 495, 805, 525]
+      Format		      "short_e"
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "temp/mA"
+      Ports		      [1]
+      Position		      [855, 249, 885, 281]
+      Location		      [352, 483, 676, 722]
+      Open		      on
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      TimeRange		      "1000            "
+      YMin		      "-35"
+      YMax		      "25"
+      SaveToWorkspace	      on
+      SaveName		      "temperature"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+    }
+    Line {
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      DstBlock		      "level/mA"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Pilot Plant Model"
+      SrcPort		      1
+      Points		      [0, 0; 105, 0]
+      Branch {
+	Points			[0, -95; -635, 0; 0, 100]
+	DstBlock		"Sum"
+	DstPort			1
+      }
+      Branch {
+	Points			[40, 0]
+	Branch {
+	  DstBlock		  "Mux1"
+	  DstPort		  2
+	}
+	Branch {
+	  Points		  [0, -50]
+	  DstBlock		  "level/ mA"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "CWtemp/(deg C)"
+      SrcPort		      1
+      DstBlock		      "Pilot Plant Model"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      DstBlock		      "level PID"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "level sp/mA"
+      SrcPort		      1
+      Points		      [65, 0]
+      Branch {
+	DstBlock		"Sum"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, -135; 610, 0; 0, 95]
+	DstBlock		"Mux1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Sum1"
+      SrcPort		      1
+      DstBlock		      "temp PID"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Pilot Plant Model"
+      SrcPort		      5
+      Points		      [85, 0]
+      Branch {
+	Points			[0, 90; -560, 0; 0, -130]
+	DstBlock		"Sum1"
+	DstPort			2
+      }
+      Branch {
+	Points			[55, 0]
+	Branch {
+	  DstBlock		  "Mux2"
+	  DstPort		  2
+	}
+	Branch {
+	  Points		  [0, 110]
+	  DstBlock		  "temp/ mA"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Mux2"
+      SrcPort		      1
+      DstBlock		      "temp/mA"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "temp PID"
+      SrcPort		      1
+      Points		      [30, 0]
+      Branch {
+	Points			[0, 125; 380, 0; 0, -65]
+	DstBlock		"Mux2"
+	DstPort			3
+      }
+      Branch {
+	Points			[20, 0; 0, -40; 45, 0]
+	Branch {
+	  DstBlock		  "Pilot Plant Model"
+	  DstPort		  2
+	}
+	Branch {
+	  Points		  [0, 295]
+	  DstBlock		  "temp/ PID OP/mA"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Sum2"
+      SrcPort		      1
+      DstBlock		      "flow PID"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "temp sp/mA"
+      SrcPort		      1
+      Points		      [65, 0]
+      Branch {
+	DstBlock		"Sum1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 170; 535, 0; 0, -115]
+	DstBlock		"Mux2"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Mux3"
+      SrcPort		      1
+      DstBlock		      "flow/mA"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Pilot Plant Model"
+      SrcPort		      3
+      Points		      [90, 0]
+      Branch {
+	Points			[0, -60; 0, 0]
+	Branch {
+	  DstBlock		  "Mux1"
+	  DstPort		  3
+	}
+	Branch {
+	  Points		  [0, -50; -475, 0; 0, 35]
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	Points			[60, 0]
+	Branch {
+	  DstBlock		  "Mux3"
+	  DstPort		  2
+	}
+	Branch {
+	  Points		  [0, 130]
+	  DstBlock		  "flow/ mA"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "level PID"
+      SrcPort		      1
+      Points		      [5, 0]
+      Branch {
+	DstBlock		"Sum2"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, -75; 430, 0; 0, 115]
+	DstBlock		"Mux3"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "flow PID"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	Points			[80, 0]
+	Branch {
+	  DstBlock		  "Pilot Plant Model"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, -35; 220, 0; 0, 105]
+	  DstBlock		  "Mux3"
+	  DstPort		  3
+	}
+      }
+      Branch {
+	Points			[0, 280]
+	DstBlock		"CW PID OP/mA"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "HWtemp/(deg C)"
+      SrcPort		      1
+      DstBlock		      "Pilot Plant Model"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "HW valve/mA"
+      SrcPort		      1
+      Points		      [220, 0]
+      Branch {
+	DstBlock		"Pilot Plant Model"
+	DstPort			4
+      }
+      Branch {
+	Points			[0, 130; 400, 0; 0, -170]
+	DstBlock		"Mux3"
+	DstPort			4
+      }
+    }
+    Line {
+      SrcBlock		      "Pilot Plant Model"
+      SrcPort		      2
+      Points		      [25, 0; 0, 250]
+      DstBlock		      "level/cm"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [3, 0]
+      SrcBlock		      "Pilot Plant Model"
+      SrcPort		      4
+      Points		      [15, 0; 0, 230]
+      DstBlock		      "CW flow/(cu.m/sec)"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Pilot Plant Model"
+      SrcPort		      6
+      Points		      [5, 0; 0, 210]
+      DstBlock		      "temp/degC"
+      DstPort		      1
+    }
+  }
+}
